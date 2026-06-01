@@ -2,15 +2,15 @@ import random
 
 
 def play_game():
-    print("=" * 40)
-    print("   NUMBER GUESSING GAME - v1 Basic")
-    print("=" * 40)
+    print("=" * 30)
+    print("   NUMBER GUESSING GAME ")
+    print("=" * 30)
+
 
     # --- setup ---
     low, high = 1, 100
     max_attempts = 7
     secret = random.randint(low, high)
-    print(secret)
     attempts = 0
 
     print(f"\nI've picked a number between {low} and {high}.")
@@ -29,7 +29,7 @@ def play_game():
 
         # validate range
         if guess < low or guess > high:
-            print(f"  Out of range! Guess between {low} and {high}.\n")
+            print(f"  Out of range! Guess between {low} and {high}.\n") 
             continue
 
         attempts += 1
